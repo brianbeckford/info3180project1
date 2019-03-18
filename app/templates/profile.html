@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block js %}
+{% endblock %}
+{% block main %}
+    <h1>Add Profile</h1>
+    <div class="container">
+     <form action="{{ url_for('profile') }}" method="post"> 
+     <div class="fom-group">
+     {{ form.firstname.label }}
+     {{ form.firstname }}
+     </div>
+     <div class="fom-group">
+     {{ form.lastname.label }}
+     {{ form.lastname }}
+     </div>
+     <div class="fom-group">
+     {{ form.gender.label }}
+     {{ form.gender }}
+     </div>
+     <div class="fom-group">
+     {{ form.email.label }}
+     {{ form.email }}
+     </div>
+     <div class="fom-group">
+     {{ form.email.label }}
+     {{ form.email }}
+     </div>
+     <div class="fom-group">
+     {{ form.location.label }}
+     {{ form.location }}
+     </div>
+     <div class="fom-group">
+     {{ form.biography.label }}
+     {{ form.biography }}
+     </div>
+     {{ form.csrf_token }} 
+     <button type="submit" class="btn btnprimary">Submit</button>
+     </form>
+    </div>
+{% endblock %} 

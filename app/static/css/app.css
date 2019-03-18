@@ -1,0 +1,62 @@
+body {
+    padding-top: 5rem;
+}
+
+#image1{
+    position: relative;
+    border-radius: 300px;
+    border-color: #00000;
+    left: 400px;
+}
+#top{
+    
+    /*width:80%;*/
+    background-color: #b5ccf2;
+    
+    
+}
+
+h2{
+    position: relative;
+    left: 430px;
+    color: white;
+}
+.desc{
+    /*position:relative;*/
+    left:0px;
+    text-align:center;
+}
+
+
+p{
+    text-align:center;
+    /*position: relative;*/
+    /*left: 400px;*/
+    color:black;
+}
+
+/*li {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*}*/
+
+/*ul{*/
+/*    text-align: center;*/
+/*}*/
+
+.column {
+  text-align:center;
+  width: 33.3%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  
+}
+button{
+    position: relative;
+    left:530px;
+}
+
