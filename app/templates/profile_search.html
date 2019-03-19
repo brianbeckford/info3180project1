@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block main %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" type=text/css /> 
+    </head>
+
+
+
+<body>
+
+
+
+<div id="bio">
+    <img class ='self' src="{{ url_for('static', filename='uploads/'+user.pp)}}"/>
+    <p class ="name"> {{user.fname+" "+user.lname}} </p>
+    <p>{{user.email}}</p>
+    <p>{{user.location}}</p>
+    <p>Joined {{ user.created_on}}</p>
+    
+    
+</div>
+
+<div id ="stome">
+<h5>About Me</h5>
+<p>{{user.biography}}</p>
+
+<br>
+<button id="but">Send Message</button>
+<button id="but">Follow</button>
+</div>
+</body>
+</html>
+{% endblock %}
